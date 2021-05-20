@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  </head>
+  <body>
+      <style>
+          body{
+              background-image: url("https://clockwise.software/img/blog/how-to-choose-a-payment-gateway/header-background.jpg");
+              background-size: 100%;
+          }
+      
+</style>
+          
+
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            
+            <h1>Payment Gateway</h1>
+          </div>
+
+          
+
+          <div class="panel-body">
+            <form action="payment.php" method="post">
+              <div class="form-group">
+                <label for="NameOnCard">Name on card</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="NameOnCard"
+                  name="NameOnCard"
+                />
+              </div>
+              <div class="form-group">
+                <label for="CreditorDebitcardnumber">Credit or Debit card number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="CreditorDebitcardnumber"
+                  name="CreditorDebitcardnumber"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="ExpMonth">Exp Month</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ExpMonth"
+                  name="ExpMonth"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ExpYear">Exp Year</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="ExpYear"
+                  name="ExpYear"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="CVV">CVV</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="CVV"
+                  name="CVV"
+                />
+              </div>
+
+              <input type="submit" class="btn btn-primary" value="Pay Securely" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; REMISE</small>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>

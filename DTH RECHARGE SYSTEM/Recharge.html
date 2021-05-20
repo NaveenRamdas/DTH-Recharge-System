@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  </head>
+  <body>
+      <style>
+          body{
+              background-image: url("https://wallpapercave.com/wp/wp5390868.jpg");
+              background-size: 100%;
+          }
+      </style>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="recharge.php" method="post">
+              <div class="form-group">
+                <label for="RegisterPhoneNumber">Register Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="RegisterPhoneNumber"
+                  name="RegisterPhoneNumber"
+                />
+              </div>
+              <div class="form-group">
+                <label for="SelectOperator">Select Operator :</label>
+                <select name="SelectOperator" id="SelectOperator">
+                <option value="choose">choose</option>
+                <option value="DishTv">Dish TV</option>
+                <option value="tatasky">TATA Sky</option>
+                <option value="sundirect">Sun Direct</option>
+                <option value="airteltv">Airtel TV</option>
+                <option value="jiotv">JIO TV</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="SelectState">Select State</label>
+                <select name="SelectState" id="SelectState">
+                <option value="choose">choose</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="tamilnadu">TamilNadu</option>
+                <option value="telangana">Telangana</option>
+                <option value="kerala">Kerala</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="SmartCardNumber">Smart Card Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="SmartCardNumber"
+                  name="SmartCardNumber"
+                />
+              </div>
+              <div class="form-group">
+                <label for="EnterAmount">Enter Amount</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="EnterAmount"
+                  name="EnterAmount"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; REMISE</small>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
